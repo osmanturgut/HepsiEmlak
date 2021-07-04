@@ -1,0 +1,29 @@
+Created by Dell on 2.07.2021
+
+This is a concept file with following syntax for each concept.
+# siteye giris yapilir ve Kiralik ilanlara gidilir
+*"https://www.hepsiemlak.com/" url'ye Git
+* "[class='he-icon cookie-policy__close he-icon--close']" executer'li elemente tikla
+*"//a/span[text()='Kiralık']" beklemeli xpath li elemente tikla
+# kiralik il-ilce secimi yapilir
+*"section[class='filter-item-wrap loc locationCitySec']" beklemeli css li elemente tikla
+*"//span[contains(text(),'Ankara')]" beklemeli xpath li elemente tikla
+*"section section~section[class='filter-item-wrap loc locationCountySec']" beklemeli css li elemente tikla
+*"div ul[class='he-multiselect__list'] li:nth-child(7)" executer'li elemente tikla
+*scroll yap
+# oda secimi '2+1'yapilir
+*"section[class='roomTypeSec'] section div" executer'li elemente tiklayalim
+*"ul[class='dropdown-list'] li:nth-child(3) label" beklemeli css li elemente tikla
+# site icerisinde filtresi aktif hale getirilir
+*"section[class='filter-switch withinSiteSec'] input" executer'li elemente tikla
+#'ARA' butonuna tiklanir
+* "a[class='btn btn-red btn-large']" beklemeli css li elemente tikla
+* scroll yap
+# '3. siradaki' ilana gidilir
+*"div[class='listView']>:nth-child(4)" clickle
+* scroll yap
+# Telefon Numarasini göster ve Kontrol et
+*"[class='owner-phone-numbers']>button" executer'li elemente tikla
+*satan kisinin "//div[@class='owner-phone-numbers']/div/ul/li" bilgilerini getir ve kontrol et
+
+

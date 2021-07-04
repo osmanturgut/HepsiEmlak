@@ -1,0 +1,30 @@
+Created by Dell on 4.07.2021
+
+This is a concept file with following syntax for each concept.
+# Mobile Siteye Giris Yapilir ve Kiralik İlanlara Gidilir
+* "mobile"set device type
+* "https://www.hepsiemlak.com/" url'ye Git
+*"//div[@class='cookie-policy']/button" beklemeli xpath li elemente tikla
+*"[class='link-sliding']>a[href='/kiralik']" beklemeli css li elemente tikla
+*"//button[@class='btn btn-white'][2]" beklemeli xpath li elemente tikla
+# Mobile il-ilce Secimi Yapilir
+*"[class='city']" beklemeli css li elemente tikla
+*"//div[@class='city']/select/option[@value='ankara']" beklemeli xpath li elemente tikla
+*"[class='city']" beklemeli css li elemente tikla
+*"//span[contains(text(),'İlçe Seçiniz')]" beklemeli xpath li elemente tikla
+*"//span[contains(text(),'Çankaya')]" beklemeli xpath li elemente tikla
+*"[class='dropdown-wrap']~button" beklemeli css li elemente tikla
+# Mobile Oda Secimi Yapilir
+*" section.room-type>section>div" executer'li elemente tikla
+*"ul >li:nth-child(4)>label" beklemeli css li elemente tikla
+*"#dropdown-lightbox-filter > button" beklemeli css li elemente tikla
+# Mobile Site icerisinde Secimi Yapilir
+*"section.within-site.d-flex>label" executer'li elemente tikla
+*".open-filter-menu > div > div.filter-close" executer'li elemente tikla
+*"div:nth-child(3)>div.inner > div.card-link>a>div" executer'li elemente tikla
+*1 saniye bekle
+# Mobile 'İlan Sahibini Ara' bilgisi alinir ve kontrol edilir
+*"div:nth-child(4)>div.contact>button>span" executer'li elemente tikla
+*1 saniye bekle
+*"//div[@class='call-owner sticky-owner-call']/a"verilen xpathin textini al
+*1 saniye bekle

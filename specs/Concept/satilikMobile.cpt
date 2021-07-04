@@ -1,0 +1,38 @@
+Created by Dell on 4.07.2021
+
+This is a concept file with following syntax for each concept.
+# Mobile Site acilir ve Satilik ilanlara gidilir
+* "mobile"set device type
+* "https://www.hepsiemlak.com/" url'ye Git
+*"//div[@class='cookie-policy']/button" beklemeli xpath li elemente tikla
+*"[class='link-sliding']>a[href='/satilik']" beklemeli css li elemente tikla
+*"//button[@class='btn btn-white'][2]" beklemeli xpath li elemente tikla
+# Mobile Satilik ilanlarda il-ilce Secimi Yapilir
+*"[class='city']" beklemeli css li elemente tikla
+*"//div[@class='city']/select/option[@value='izmir']" beklemeli xpath li elemente tikla
+*"[class='city']" beklemeli css li elemente tikla
+*"//span[contains(text(),'İlçe Seçiniz')]" beklemeli xpath li elemente tikla
+*1 saniye bekle
+*"//span[contains(text(),'Bornova')]" beklemeli xpath li elemente tikla
+*1 saniye bekle
+*"[class='dropdown-wrap']~button" beklemeli css li elemente tikla
+*1 saniye bekle
+# Mobile kategoride 'İs yeri' Secimi Yapilir
+*"label[for='category1']" executer'li elemente tikla
+*1 saniye bekle
+# Mobile Max-Min Fiyat Bilgisi girilir
+*"section.price>div>div:nth-child(1)>input" yeni ya girilen "100000" degeri
+*1 saniye bekle
+*"section.price>div>div:nth-child(2)>input" yeni ya girilen "2000000" degeri
+*1 saniye bekle
+# Mobile Bina yasi 'sifir bina','1-5' ve '6-10' filtreleri girilir
+*"section.building-age>section>div" executer'li elemente tikla
+*1 saniye bekle
+*"div.dropdown-wrap > ul > li:nth-child(2)" beklemeli css li elemente tikla
+*"div.dropdown-wrap > ul > li:nth-child(3)" beklemeli css li elemente tikla
+*"div.dropdown-wrap > ul > li:nth-child(4)" beklemeli css li elemente tikla
+*1 saniye bekle
+# Mobile Girilen Filtreleri Kontrol eder
+*"#dropdown-lightbox-filter > button" beklemeli css li elemente tikla
+*1 saniye bekle
+* "//div[@class='swiper-wrapper']/div" filtre kontrol edilmesi

@@ -1,0 +1,17 @@
+Created by Dell on 30.06.2021
+
+This is a concept file with following syntax for each concept.
+# kiralik kategorisindeki girilen filtrelerin kontrolu saglanir
+*"//*[@class='applied-filters-list__group'][1]/span[2]" element ile "Ankara" kontrol edilmesi
+*"//*[@class='applied-filters-list__group'][2]/span[2]" element ile "Çankaya" kontrol edilmesi
+*"//*[@class='applied-filters-list__group'][3]/span[2]" element ile "2+1" kontrol edilmesi
+*"//*[@class='applied-filters-list__group'][4]/span[2]" element ile "Evet" kontrol edilmesi
+# satilik kategorisindeki girilen filtrelerin kontrolu saglanir
+* "//*[@class='applied-filters-list__group'][1]/span[2]" element ile "İzmir" kontrol edilmesi
+* "//*[@class='applied-filters-list__group'][2]/span[2]" element ile "Bornova" kontrol edilmesi
+*1 saniye bekle
+* "//*[@class='applied-filters-list__group'][4]/span[2]" element ile "100.000 TL - 2.000.000 TL" kontrol edilmesi
+* "//*[@class='applied-filters-list__group'][5]/span[2]" element ile "Sıfır Bina" kontrol edilmesi
+* "//ul/span[1]" element ile "1-5" kontrol edilmesi
+* "//ul/span[2]" element ile "6-10" kontrol edilmesi
+*1 saniye bekle

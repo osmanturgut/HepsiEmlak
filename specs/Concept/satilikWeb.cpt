@@ -1,0 +1,27 @@
+Created by Dell on 2.07.2021
+
+This is a concept file with following syntax for each concept.
+# siteye giris yapilir ve satilik ilanlara gidilir
+*"https://www.hepsiemlak.com/" url'ye Git
+*"ul[class='search-title-tab-list']>li>a[href='/satilik']" beklemeli css li elemente tikla
+# il-ilce secimi yapilir
+*"section[class='filter-item-wrap loc locationCitySec']" beklemeli css li elemente tikla
+*"//span[contains(text(),'İzmir')]" beklemeli xpath li elemente tikla
+*"section section~section[class='filter-item-wrap loc locationCountySec']" beklemeli css li elemente tikla
+*"div ul[class='he-multiselect__list'] li:nth-child(7)" executer'li elemente tikla
+* scroll yap
+# kategori secimi yapilir
+*"label[for='category1']" executer'li elemente tikla
+*1 saniye bekle
+# min fiyat ve max fiyat bilgisi girilir
+*"input[class='floating-input priceMin']" yeni ya girilen "100000" degeri
+*"input[class='floating-input priceMax']" yeni ya girilen "2000000" degeri
+* scroll yap
+# bina yasi 'sifir' , '1-5' ve '6-10' secilir
+*"section[class='buildingAgeSec'] section div" beklemeli css li elemente tikla
+*"ul[class='dropdown-list'] li:nth-child(1)" beklemeli css li elemente tikla
+*"ul[class='dropdown-list'] li:nth-child(2) label" beklemeli css li elemente tikla
+*"ul[class='dropdown-list'] li:nth-child(3) label" beklemeli css li elemente tikla
+# girilen filtrelere göre arama butonuna tiklanir
+*scroll yap
+*"a[class='btn btn-red btn-large']" clickle
