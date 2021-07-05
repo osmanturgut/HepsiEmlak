@@ -1,6 +1,7 @@
 package factory;
 
 import enums.Browser;
+import org.junit.After;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -46,4 +47,5 @@ public class BrowserProvider {
 	public static WebDriver getDriver() {
 		return driver;
 	}
+
 }

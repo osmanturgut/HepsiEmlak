@@ -1,1 +1,1 @@
-var index = {"Tags":{},"Specs":{"Specification Heading":["specs/satilikMobile.html"]}};
+var index = {"Tags":{},"Specs":{"Hepsi Emlak":["specs/satilikWeb.html"]}};

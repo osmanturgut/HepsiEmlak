@@ -3,7 +3,7 @@ Kiralik Web Proje
 
 Hepsi Emlak Kiralık Test Step
 ------------------------------------
-* kiralik "CHROMEWEB" test olarak çaliştirilir
+* "CHROMEWEB" test olarak çaliştirilir
 * siteye giris yapilir ve Kiralik ilanlara gidilir
 * kiralik il-ilce secimi yapilir
 * oda secimi '2+1'yapilir

@@ -2,6 +2,7 @@ Created by Dell on 2.07.2021
 
 This is a concept file with following syntax for each concept.
 # siteye giris yapilir ve satilik ilanlara gidilir
+* "CHROMEWEB" test olarak çaliştirilir
 *"https://www.hepsiemlak.com/" url'ye Git
 *"ul[class='search-title-tab-list']>li>a[href='/satilik']" beklemeli css li elemente tikla
 # il-ilce secimi yapilir

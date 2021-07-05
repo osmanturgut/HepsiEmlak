@@ -7,7 +7,6 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
      
 Kiralik Mobile Test
 ----------------
-* kiralik "CHROMEMOBILE" test olarak çaliştirilir
 * Mobile Siteye Giris Yapilir ve Kiralik İlanlara Gidilir
 * Mobile il-ilce Secimi Yapilir
 * Mobile Oda Secimi Yapilir

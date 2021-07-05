@@ -17,10 +17,10 @@ import static org.junit.Assert.assertTrue;
 
 
 public class HepsiEmlakTest2 {
-    protected  static  WebDriver driver = null;
+    protected static WebDriver driver = null;
     public JavascriptExecutor executor;
     static Long timeout = Long.parseLong("30");
-    static WebDriverWait wait ;
+    static WebDriverWait wait;
 
     public WebElement visibilityElement(By by) {
         return (WebElement) this.wait.until(ExpectedConditions.visibilityOfElementLocated(by));
@@ -38,7 +38,6 @@ public class HepsiEmlakTest2 {
     @Step("<url> url'ye Git")
     public void url(String url) {
         driver.get(url);
-
     }
 
     @Step("<xpath> beklemeli xpath li elemente tikla")
@@ -46,7 +45,6 @@ public class HepsiEmlakTest2 {
         clickVisibilityElement((By.xpath(xpath)));
 
     }
-
 
     @Step("<selector> beklemeli css li elemente tikla")
     public void cssliElementeTikla(String selector) {
@@ -127,8 +125,6 @@ public class HepsiEmlakTest2 {
         }
     }
 
-
-
     @Step("<text>verilen xpathin textini al")
     public void xpathText(String text) {
 
@@ -139,7 +135,6 @@ public class HepsiEmlakTest2 {
         Matcher matcher = pattern.matcher(deger.substring(6));
         assertTrue(matcher.matches());
         System.out.println("geldi : " + deger.substring(6));
-
 
     }
 
@@ -154,15 +149,14 @@ public class HepsiEmlakTest2 {
                                     + "]/div/div/p"));
 
         }
-
     }
 
-    @Step("kiralik <platform> test olarak çaliştirilir")
-    public void implementation1(String platform) {
+    @Step("<platform> test olarak çaliştirilir")
+    public void platformSecimi(String platform) {
         driver = BrowserProvider.createDriver(Browser.valueOf(platform.toUpperCase()));
         driver.manage().window().maximize();
-        wait= new WebDriverWait(driver, 30L, 500L);
-        executor= (JavascriptExecutor) driver;
+        wait = new WebDriverWait(driver, 30L, 500L);
+        executor = (JavascriptExecutor) driver;
     }
 
 

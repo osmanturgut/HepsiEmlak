@@ -2,6 +2,7 @@ Created by Dell on 2.07.2021
 
 This is a concept file with following syntax for each concept.
 # siteye giris yapilir ve Kiralik ilanlara gidilir
+* "CHROMEWEB" test olarak çaliştirilir
 *"https://www.hepsiemlak.com/" url'ye Git
 *"//a/span[text()='Kiralık']" beklemeli xpath li elemente tikla
 # kiralik il-ilce secimi yapilir
