@@ -7,6 +7,7 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
      
 Scenario Heading
 ----------------
+* kiralik "CHROMEMOBILE" test olarak çaliştirilir
 * Mobile Site acilir ve Satilik ilanlara gidilir
 * Mobile Satilik ilanlarda il-ilce Secimi Yapilir
 * Mobile kategoride 'İs yeri' Secimi Yapilir

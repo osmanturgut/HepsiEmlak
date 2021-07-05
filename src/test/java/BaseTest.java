@@ -12,12 +12,12 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
-
+/*
     protected static WebDriver driver = null;
 
     String device="web"; // Mobile çalıştırılması için web yerine mobile yazılmalıdır.
 
-    @BeforeScenario
+@AfterScenario
     public void setup() {
         if (device.equals("web")){
             System.out.println("web geldi");
@@ -26,6 +26,7 @@ public class BaseTest {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("start-maximized");
             options.addArguments("--disable-notifications");
+            driver = new ChromeDriver(options);
             driver = new ChromeDriver(options);
 
         }
@@ -60,5 +61,5 @@ public class BaseTest {
         //  driver.close();
         //   driver.quit();
     }
-
+*/
 }

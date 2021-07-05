@@ -1,7 +1,10 @@
 import com.thoughtworks.gauge.Step;
+import enums.Browser;
+import factory.BrowserProvider;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -13,10 +16,11 @@ import java.util.regex.Pattern;
 import static org.junit.Assert.assertTrue;
 
 
-public class HepsiEmlakTest2 extends BaseTest {
-    public JavascriptExecutor executor = (JavascriptExecutor) driver;
+public class HepsiEmlakTest2 {
+    protected  static  WebDriver driver = null;
+    public JavascriptExecutor executor;
     static Long timeout = Long.parseLong("30");
-    static WebDriverWait wait = new WebDriverWait(driver, 30L, 500L);
+    static WebDriverWait wait ;
 
     public WebElement visibilityElement(By by) {
         return (WebElement) this.wait.until(ExpectedConditions.visibilityOfElementLocated(by));
@@ -123,12 +127,6 @@ public class HepsiEmlakTest2 extends BaseTest {
         }
     }
 
-    @Step("<platform>set device type")
-    public void device(String platform) {
-
-        this.device = platform;
-
-    }
 
 
     @Step("<text>verilen xpathin textini al")
@@ -158,6 +156,16 @@ public class HepsiEmlakTest2 extends BaseTest {
         }
 
     }
+
+    @Step("kiralik <platform> test olarak çaliştirilir")
+    public void implementation1(String platform) {
+        driver = BrowserProvider.createDriver(Browser.valueOf(platform.toUpperCase()));
+        driver.manage().window().maximize();
+        wait= new WebDriverWait(driver, 30L, 500L);
+        executor= (JavascriptExecutor) driver;
+    }
+
+
 }
 
 

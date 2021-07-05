@@ -2,7 +2,6 @@ Created by Dell on 4.07.2021
 
 This is a concept file with following syntax for each concept.
 # Mobile Site acilir ve Satilik ilanlara gidilir
-* "mobile"set device type
 * "https://www.hepsiemlak.com/" url'ye Git
 *"//div[@class='cookie-policy']/button" beklemeli xpath li elemente tikla
 *"[class='link-sliding']>a[href='/satilik']" beklemeli css li elemente tikla

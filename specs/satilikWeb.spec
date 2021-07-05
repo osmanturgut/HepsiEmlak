@@ -3,7 +3,6 @@ Hepsi Emlak
 
  Hepsi Emlak Satılık Test Step
 ------------------------------------
-* "web"set device type
 * siteye giris yapilir ve satilik ilanlara gidilir
 * il-ilce secimi yapilir
 * kategori secimi yapilir
