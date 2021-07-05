@@ -57,13 +57,6 @@ public class HepsiEmlakTest2 {
         sendKeys(By.cssSelector(kutu), miktar);
     }
 
-    @Step("<kategori>is yeri kategori seç")
-    public void kategoriSecimi(String kategori) {
-        WebElement element = driver.findElement(By.cssSelector(kategori));
-        wait.until(ExpectedConditions.visibilityOf(element));
-        element.click();
-    }
-
     @Step("<jsExecuter> executer'li elemente tiklayalim")
     public void javaScripExecuterBekleme(String jsExecuter) {
         WebElement element = driver.findElement(By.cssSelector(jsExecuter));
